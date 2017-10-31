@@ -1,5 +1,7 @@
 language: php
 
+# Version 7.1 de PHP
+
 php:
   - 5.5
   - 7.1
