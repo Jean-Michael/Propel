@@ -10,6 +10,8 @@
 
 require_once dirname(__FILE__) . '/../../../../generator/lib/model/ColumnDefaultValue.php';
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Tests for ColumnDefaultValue class.
  *

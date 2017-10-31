@@ -8,6 +8,8 @@
  * @license    MIT License
  */
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Tests the table structure behavior hooks.
  *

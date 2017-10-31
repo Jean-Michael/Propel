@@ -10,6 +10,8 @@
 
 require_once dirname(__FILE__) . '/../../../../runtime/lib/exception/PropelException.php';
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Test for PropelException class
  *

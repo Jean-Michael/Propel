@@ -11,6 +11,8 @@
 require_once dirname(__FILE__) . '/../../../../runtime/lib/parser/PropelParser.php';
 require_once dirname(__FILE__) . '/../../../../runtime/lib/parser/PropelYAMLParser.php';
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Test for PropelYAMLParser class
  *

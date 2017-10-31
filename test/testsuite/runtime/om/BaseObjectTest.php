@@ -10,6 +10,8 @@
 
 require_once dirname(__FILE__) . '/../../../../runtime/lib/om/BaseObject.php';
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Test class for BaseObject.
  *

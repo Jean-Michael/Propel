@@ -12,7 +12,7 @@ require_once dirname(__FILE__) . '/../../../../generator/lib/model/Behavior.php'
 require_once dirname(__FILE__) . '/../../../../generator/lib/model/Table.php';
 require_once dirname(__FILE__) . '/../../../../generator/lib/builder/util/XmlToAppData.php';
 require_once dirname(__FILE__) . '/../../../../generator/lib/behavior/TimestampableBehavior.php';
-
+use PHPUnit\Framework\TestCase;
 /**
  * Tests for Behavior class
  *
@@ -20,7 +20,7 @@ require_once dirname(__FILE__) . '/../../../../generator/lib/behavior/Timestampa
  * @version    $Revision$
  * @package    generator.model
  */
-class BehaviorTest extends PHPUnit_Framework_TestCase
+class BehaviorTest extends TestCase
 {
   private $xmlToAppData;
   private $appData;

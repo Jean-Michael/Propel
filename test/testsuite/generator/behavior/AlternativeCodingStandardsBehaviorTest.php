@@ -11,7 +11,7 @@
 
 require_once dirname(__FILE__) . '/../../../../generator/lib/model/Behavior.php';
 require_once dirname(__FILE__) . '/../../../../generator/lib/behavior/AlternativeCodingStandardsBehavior.php';
-
+use PHPUnit\Framework\TestCase;
 /**
  * Tests for TimestampableBehavior class
  *
@@ -19,7 +19,7 @@ require_once dirname(__FILE__) . '/../../../../generator/lib/behavior/Alternativ
  * @version    $Revision$
  * @package    generator.behavior
  */
-class AlternativeCodingStandardsBehaviorTest extends PHPUnit_Framework_TestCase
+class AlternativeCodingStandardsBehaviorTest extends TestCase
 {
     public function convertBracketsNewlineDataProvider()
     {

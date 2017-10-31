@@ -13,6 +13,8 @@ require_once dirname(__FILE__) . '/../../../../generator/lib/model/Column.php';
 require_once dirname(__FILE__) . '/../../../../generator/lib/util/PropelQuickBuilder.php';
 require_once dirname(__FILE__) . '/../../../../runtime/lib/Propel.php';
 
+use PHPUnit\Framework\TestCase;
+
 /**
  *
  * @package    generator.platform

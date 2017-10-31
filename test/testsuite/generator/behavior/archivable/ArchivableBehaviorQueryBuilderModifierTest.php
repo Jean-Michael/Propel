@@ -13,6 +13,8 @@ require_once dirname(__FILE__) . '/../../../../../generator/lib/util/PropelQuick
 require_once dirname(__FILE__) . '/../../../../../generator/lib/behavior/archivable/ArchivableBehavior.php';
 require_once dirname(__FILE__) . '/../../../../../runtime/lib/Propel.php';
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Tests for ArchivableBehavior class
  *

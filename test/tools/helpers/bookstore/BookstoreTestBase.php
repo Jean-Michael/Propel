@@ -12,6 +12,8 @@ require_once dirname(__FILE__) . '/../../../../runtime/lib/Propel.php';
 set_include_path(get_include_path() . PATH_SEPARATOR . realpath(dirname(__FILE__) . '/../../../fixtures/bookstore/build/classes'));
 Propel::init(dirname(__FILE__) . '/../../../fixtures/bookstore/build/conf/bookstore-conf.php');
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Base class contains some methods shared by subclass test cases.
  */

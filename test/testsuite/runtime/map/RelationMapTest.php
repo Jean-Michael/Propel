@@ -13,6 +13,8 @@ require_once dirname(__FILE__) . '/../../../../runtime/lib/map/RelationMap.php';
 require_once dirname(__FILE__) . '/../../../../runtime/lib/map/ColumnMap.php';
 require_once dirname(__FILE__) . '/../../../../runtime/lib/map/TableMap.php';
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Test class for RelationMap.
  *

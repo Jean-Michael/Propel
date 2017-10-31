@@ -10,12 +10,12 @@
 
 require_once dirname(__FILE__) . '/../../../../generator/lib/util/PropelQuickBuilder.php';
 require_once dirname(__FILE__) . '/../../../../runtime/lib/Propel.php';
-
+use PHPUnit\Framework\TestCase;
 /**
  *
  * @package    generator.util
  */
-class PropelQuickBuilderTest extends PHPUnit_Framework_TestCase
+class PropelQuickBuilderTest extends TestCase
 {
     public function testGetPlatform()
     {
