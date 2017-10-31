@@ -15,7 +15,6 @@
   "include-path": ["runtime/lib", "generator/lib"],
   "require": {
     "php": ">=5.2.4",
-    "phpunit/phpunit": "^5.7",
     "phing/phing": "~2.4"
   },
   "extra": {
