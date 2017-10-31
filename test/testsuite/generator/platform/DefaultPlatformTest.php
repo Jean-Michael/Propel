@@ -17,7 +17,7 @@ require_once dirname(__FILE__) . '/../../../../runtime/lib/Propel.php';
  *
  * @package    generator.platform
  */
-class DefaultPlatformTest extends PHPUnit_Framework_TestCase
+class DefaultPlatformTest extends TestCase
 {
     protected $platform;
 

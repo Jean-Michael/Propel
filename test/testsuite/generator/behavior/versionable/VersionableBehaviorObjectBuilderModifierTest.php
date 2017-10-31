@@ -20,7 +20,7 @@ require_once dirname(__FILE__) . '/../../../../../runtime/lib/Propel.php';
  * @version    $Revision$
  * @package    generator.behavior.versionable
  */
-class VersionableBehaviorObjectBuilderModifierTest extends PHPUnit_Framework_TestCase
+class VersionableBehaviorObjectBuilderModifierTest extends TestCase
 {
 
     public function setUp()

@@ -17,7 +17,7 @@ require_once dirname(__FILE__) . '/../../../../runtime/lib/parser/PropelYAMLPars
  * @author     Francois Zaninotto
  * @package    runtime.parser
  */
-class PropelYAMLParserTest extends PHPUnit_Framework_TestCase
+class PropelYAMLParserTest extends TestCase
 {
     public static function arrayYAMLConversionDataProvider()
     {
