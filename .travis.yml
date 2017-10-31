@@ -3,15 +3,15 @@ language: php
 # Version 7.1 de PHP
 
 php:
-  - 5.5
+#  - 5.5
   - 7.1
 
 env:
   - DB=mysql DB_USER=root
 
-matrix:
-  allow_failures:
-    - php: 5.5
+#matrix:
+#  allow_failures:
+#    - php: 5.5
 
 before_script:
   # MySQL
