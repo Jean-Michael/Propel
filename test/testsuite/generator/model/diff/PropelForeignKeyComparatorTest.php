@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @package    generator.model.diff
  */
-class PropelForeignComparatorTest extends _TestCase
+class PropelForeignComparatorTest extends TestCase
 {
     public function testCompareNoDifference()
     {
