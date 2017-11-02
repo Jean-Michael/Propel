@@ -57,37 +57,32 @@ class NameFactoryTest extends BaseTestCase
      */
     private $database;
 
-    /**
-     * Creates a new instance.
-     *
-     */
-    public function __construct()
+    function setUp()
     {
         self::$INPUTS = array(
-                array( array(self::makeString(61), "I", 1),
-                        array(self::makeString(61), "I", 2),
-                        array(self::makeString(65), "I", 3),
-                        array(self::makeString(4), "FK", 1),
-                        array(self::makeString(5), "FK", 2)
-                    ),
-                array(
-                        array("MY_USER", NameGenerator::CONV_METHOD_UNDERSCORE),
-                        array("MY_USER", NameGenerator::CONV_METHOD_PHPNAME),
-                        array("MY_USER", NameGenerator::CONV_METHOD_NOCHANGE)
-                    )
-                );
+            array( array(self::makeString(61), "I", 1),
+                array(self::makeString(61), "I", 2),
+                array(self::makeString(65), "I", 3),
+                array(self::makeString(4), "FK", 1),
+                array(self::makeString(5), "FK", 2)
+            ),
+            array(
+                array("MY_USER", NameGenerator::CONV_METHOD_UNDERSCORE),
+                array("MY_USER", NameGenerator::CONV_METHOD_PHPNAME),
+                array("MY_USER", NameGenerator::CONV_METHOD_NOCHANGE)
+            )
+        );
 
 
         self::$OUTPUTS = array(
-                        array(
-                            self::makeString(60) . "_I_1",
-                            self::makeString(60) . "_I_2",
-                            self::makeString(60) . "_I_3",
-                            self::makeString(4) . "_FK_1",
-                            self::makeString(5) . "_FK_2"),
-                        array("MyUser", "MYUSER", "MY_USER")
-                    );
-
+            array(
+                self::makeString(60) . "_I_1",
+                self::makeString(60) . "_I_2",
+                self::makeString(60) . "_I_3",
+                self::makeString(4) . "_FK_1",
+                self::makeString(5) . "_FK_2"),
+            array("MyUser", "MYUSER", "MY_USER")
+        );
     }
 
     /**
