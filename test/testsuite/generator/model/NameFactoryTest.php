@@ -57,7 +57,26 @@ class NameFactoryTest extends BaseTestCase
      */
     private $database;
 
-    function setUp()
+    /**
+     * Creates a string of the specified length consisting entirely of
+     * the character <code>A</code>.  Useful for simulating table
+     * names, etc.
+     *
+     * @param  int $len the number of characters to include in the string
+     * @return a   string of length <code>len</code> with every character an 'A'
+     */
+    private static function makeString($len)
+    {
+        $buf = "";
+        for ($i = 0; $i < $len; $i++) {
+            $buf .= 'A';
+        }
+
+        return $buf;
+    }
+
+    /** Sets up the Propel model. */
+    public function setUp()
     {
         self::$INPUTS = array(
             array( array(self::makeString(61), "I", 1),
@@ -83,29 +102,7 @@ class NameFactoryTest extends BaseTestCase
                 self::makeString(5) . "_FK_2"),
             array("MyUser", "MYUSER", "MY_USER")
         );
-    }
 
-    /**
-     * Creates a string of the specified length consisting entirely of
-     * the character <code>A</code>.  Useful for simulating table
-     * names, etc.
-     *
-     * @param  int $len the number of characters to include in the string
-     * @return a   string of length <code>len</code> with every character an 'A'
-     */
-    private static function makeString($len)
-    {
-        $buf = "";
-        for ($i = 0; $i < $len; $i++) {
-            $buf .= 'A';
-        }
-
-        return $buf;
-    }
-
-    /** Sets up the Propel model. */
-    public function setUp()
-    {
         $appData = new AppData(new MysqlPlatform());
         $this->database = new Database();
         $appData->addDatabase($this->database);
